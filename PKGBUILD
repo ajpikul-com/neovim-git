@@ -21,7 +21,7 @@ optdepends=('python-neovim: for Python 3 plugin support (see :help provider-pyth
             'wl-clipboard: for clipboard support on wayland (see :help clipboard)')
 provides=("$_pkgname=${pkgver/\.r*/}" 'vim-plugin-runtime')
 conflicts=("$_pkgname")
-source=("git+https://github.com/neovim/$_pkgname.git"
+source=("git+file://home/ajp/projects/neovim/$_pkgname.git"
         "$pkgname-archlinux.vim"
         "$pkgname-sysinit.vim")
 b2sums=('SKIP'
